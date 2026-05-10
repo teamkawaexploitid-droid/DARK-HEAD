@@ -1,0 +1,21 @@
+# Di Termux / PC
+
+# 1. Buat folder
+mkdir DARK-HEAD-ATTACKER
+cd DARK-HEAD-ATTACKER
+
+# 2. Buat semua file di atas (copy paste)
+nano README.md
+nano darkhead.sh
+nano install.sh
+nano .gitignore
+
+# 3. Git init
+git init
+git add .
+git commit -m "DARK HEAD ATTACKER v3.0 - Real Web Attack Tool"
+
+# 4. Hubungkan ke GitHub (ganti dengan username XSO)
+git branch -M main
+git remote add origin https://github.com/KAWA-EXPLOIT/DARK-HEAD-ATTACKER.git
+git push -u origin main
