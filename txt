@@ -1,0 +1,21 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                    DARK HEAD ATTACKER v3.0                    ║
+║                 Author: XSO | KAWA EXPLOIT                    ║
+║                    ⚡ REAL ATTACK MODE ⚡                      ║
+╚═══════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────┐
+│                       MENU SERANGAN                          │
+├─────────────────────────────────────────────────────────────┤
+│   [1] 💀 HTTP DDOS FLOOD                                     │
+│   [2] 💀 SLOWLORIS ATTACK                                    │
+│   [3] 💀 PING OF DEATH                                       │
+│   [4] 💉 SQL INJECTION                                       │
+│   [5] 🔍 ADMIN FINDER                                        │
+│   [6] 📁 DIRECTORY BRUTEFORCE                                │
+│   [7] 🕸️ SUBDOMAIN SCANNER                                   │
+│   [8] 📡 PORT SCANNER                                        │
+│   [9] 🌐 WHOIS LOOKUP                                        │
+│   [10] 💣 ALL IN ONE ATTACK                                  │
+│   [0] 🚪 EXIT                                                │
+└─────────────────────────────────────────────────────────────┘
